@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Sensors Data" />
+	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    
+	    <TextView
+			android:id="@+id/text_gps"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="GPS: disabled" />
+		<TextView
+			android:id="@+id/text_accelerometer"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Accelerometer: disabled" />
+		<TextView
+			android:id="@+id/text_proximity"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Proximity: disabled" />
+		<TextView
+			android:id="@+id/text_light"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Compass: disabled" />
+		<TextView
+			android:id="@+id/text_magnetic_field"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Light: disabled" />
+		<TextView
+			android:id="@+id/text_gyroscope"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Gyroscope: disabled" />
+		
+	</LinearLayout>
+
+	<TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Select Activity" />
+	
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+
+	    <Button
+	        android:id="@+id/sensors"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Sensors" />
+
+	    <Button
+	        android:id="@+id/selections"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Selections" />
+
+	    <Button
+	        android:id="@+id/recording"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Recording" />
+	</LinearLayout>
+
+	<TextView
+	    android:id="@+id/textView3"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_horizontal"
+	    android:text="Exiting with closing sensors:"
+	    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	<Button
+	    android:id="@+id/exit"
+	    style="?android:attr/buttonStyleSmall"
+	    android:layout_width="wrap_content"
+	    android:layout_height="34dp"
+	    android:layout_gravity="center_horizontal"
+	    android:text="Exit" />
+
+</LinearLayout>
